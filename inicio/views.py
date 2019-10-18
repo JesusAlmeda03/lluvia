@@ -27,6 +27,9 @@ def logout_view(request):
 
 def dash_view(request):
     return render(request, 'inicio/dash.html')
+    
+def nuevo_view(request):
+    return HttpResponse(str('Hola Vas a crear un Tablero nuevo'))
 
 def mensaje_view(request):
     return HttpResponse(str('Hola Bienvenido'))

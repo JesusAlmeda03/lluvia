@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row">
             <br><br>
-            <form action="{% url "login" %}" method="POST" class="white z-depth-3 col s12 m6 l4">
+            <form action="{% url "login" %}" method="POST" class="white z-depth-3 col s12 m6 l4 push-m3 push-l4">
                 {% csrf_token %}
                 <input type="text" name="username" placeholder="Usernane">
                 <input type="password" name="password" placeholder="Password">
