@@ -18,7 +18,13 @@ from django.urls import path
 from inicio import views as inicio_views
 
 urlpatterns = [
-    path('', inicio_views.login_view, name = "login"),
     
-    path ('inicio/', inicio_views.login_view, name = "login2"),
+    path('admin/', admin.site.urls),
+    path ('inicio/', inicio_views.login_view, name = "login"),
+    path ('', inicio_views.login_view, name = "login"),
+    path ('inicio/login/', inicio_views.login_view, name = "login"),
+    path ('inicio/mensaje/', inicio_views.mensaje_view, name = "mensaje"),
+    path ('inicio/dash/', inicio_views.dash_view, name = "dash"),
+    path ('inicio/mensaje_error/', inicio_views.mensajeerror_view, name = "error"),
+    path ('inicio/logout/', inicio_views.logout_view, name = "logout"),
 ]
